@@ -7,5 +7,6 @@ public class Kunde {
 		
 	//Danke Michael für deinen Part!!
 		Prof. Dr. Bojan Eric
+		Prof. Dr. Ing. med. lic. Adrian Stanic
 	}
 }
