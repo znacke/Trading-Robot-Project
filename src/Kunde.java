@@ -5,6 +5,8 @@ public class Kunde {
 		
 		int 1;
 		
-	//Danke Michael für deinen Part!!	
+	//Danke Michael für deinen Part!!
+	//Merci!
+		
 	}
 }
