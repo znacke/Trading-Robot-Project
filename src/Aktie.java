@@ -60,6 +60,4 @@ public class Aktie {
 	public void setVolumenv(int volumenv) {
 		this.volumenv = volumenv;
 	}
-
->>>>>>> branch 'Prototyp' of https://github.com/znacke/Trading-Robot-Project
 }
