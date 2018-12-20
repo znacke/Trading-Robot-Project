@@ -1,17 +1,6 @@
 
 public class Aktie {
 
-<<<<<<< HEAD
-	public static void main(String[] Args) {
-		
-/*Name : String
-Wert : double
-Max. : double
-Min. : double
-Volumen : int
-check Schwellenwert ( )
-*/
-=======
 	// max wird fuer Verkauf genutzt
 	// min wird fuer Kauf genutzt
 	// volumenk ist das Volumen für den Kauf
@@ -27,10 +16,6 @@ check Schwellenwert ( )
 
 	public String getName() {
 		return name;
->>>>>>> branch 'Prototyp' of https://github.com/znacke/Trading-Robot-Project
-	}
-<<<<<<< HEAD
-=======
 
 	public void setName(String name) {
 		this.name = name;
