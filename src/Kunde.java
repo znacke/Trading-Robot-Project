@@ -19,8 +19,6 @@ public class Kunde {
 	private boolean Einlage;
 	
 	*/
-
-	public static void main (String[] args) {
 			
 	private String vorname = "Christian";
 	private String nachname = "Gross";
