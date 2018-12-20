@@ -1,6 +1,7 @@
 import java.time.LocalDate;
 
 public class Kunde {
+<<<<<<< HEAD
 
 /*	private String Vorname;
 =======
@@ -34,6 +35,25 @@ public class Kunde {
 =======
 		
 >>>>>>> branch 'Prototyp' of https://github.com/znacke/Trading-Robot-Project
+=======
+
+	public static void main (String[] args) {
+			
+	private String vorname = "Christian";
+	private String nachname = "Gross";
+	private String strasse = "Strasse";
+	private int hausnummer = 214;
+	private String privatKontoNR = "112-458";
+	private String eMail = "christian.gross@gmx.ch;
+	private int telefon = +794589684;
+	private boolean bonitaet;
+	private boolean einlage;
+
+	
+	
+	
+	/*
+>>>>>>> branch 'Prototyp' of https://github.com/znacke/Trading-Robot-Project
 	int day = 10;
 	int month = 11;
 <<<<<<< HEAD
@@ -60,6 +80,11 @@ public class Kunde {
 >>>>>>> branch 'Prototyp' of https://github.com/znacke/Trading-Robot-Project
 		System.out.println("IS NOT");
 	}
+<<<<<<< HEAD
+=======
+	*/	
+		
+>>>>>>> branch 'Prototyp' of https://github.com/znacke/Trading-Robot-Project
 
 	/*
 	 * Vorname:String Nachname:String Strasse : String Hausnummer : int Privat Konto
