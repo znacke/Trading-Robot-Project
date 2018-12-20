@@ -2,7 +2,6 @@ import java.time.LocalDate;
 
 public class Kunde {
 
-<<<<<<< HEAD
 /*	private String Vorname;
 =======
 	public static void main (String[] args) {	
@@ -19,7 +18,6 @@ public class Kunde {
 	private boolean Einlage;
 	
 	*/
-<<<<<<< HEAD
 
 	private String Vorname = "Christian";
 	private String Nachname = "Gross";
