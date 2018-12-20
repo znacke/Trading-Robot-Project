@@ -8,6 +8,11 @@ public class Aktie {
 	// ES FEHLT DIE METHODE CHECKSCHWELLENWERT
 
 	String name = "name";
+	double wert = 100.58;
+	double max = 150.33;
+	double min = 80.05;
+	int volumenk = 2;
+	int volumenv = 2;
 
 	public String getName() {
 		return name;
@@ -56,11 +61,5 @@ public class Aktie {
 	public void setVolumenv(int volumenv) {
 		this.volumenv = volumenv;
 	}
-
-	double wert = 100.58;
-	double max = 150.33;
-	double min = 80.05;
-	int volumenk = 2;
-	int volumenv = 2;
 
 }
