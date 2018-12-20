@@ -7,15 +7,15 @@ public class Aktie {
 	// volumenv ist das Volumen für den Verkauf
 	// ES FEHLT DIE METHODE CHECKSCHWELLENWERT
 
-	String name = "name";
-	double wert = 100.58;
-	double max = 150.33;
-	double min = 80.05;
-	int volumenk = 2;
-	int volumenv = 2;
+	private String name = "name";
+	private double wert = 100.58;
+	private double maxSchwellenwert = 150.33;
+	private double minSchwellenwert = 80.05;
+	private int volumen = 2;
 
 	public String getName() {
 		return name;
+	}
 
 	public void setName(String name) {
 		this.name = name;
@@ -29,20 +29,20 @@ public class Aktie {
 		this.wert = wert;
 	}
 
-	public double getMax() {
-		return max;
+	public double getMaxSchwellenwert() {
+		return maxSchwellenwert;
 	}
 
-	public void setMax(double max) {
-		this.max = max;
+	public void setMaxSchwellenwert(double maxSchwellenwert) {
+		this.maxSchwellenwert = maxSchwellenwert;
 	}
 
-	public double getMin() {
-		return min;
+	public double getMinSchwellenwert() {
+		return minSchwellenwert;
 	}
 
-	public void setMin(double min) {
-		this.min = min;
+	public void setMinSchwellenwert(double minSchwellenwert) {
+		this.minSchwellenwert = minSchwellenwert;
 	}
 
 	public int getVolumenk() {
@@ -60,4 +60,5 @@ public class Aktie {
 	public void setVolumenv(int volumenv) {
 		this.volumenv = volumenv;
 	}
+
 }
