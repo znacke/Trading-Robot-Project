@@ -11,6 +11,8 @@ public class Kunde {
 	private int telefon = +794589684;
 	private boolean bonitaet;
 	private boolean einlage;
+	private Alter a;
+	
 
 }
 }
