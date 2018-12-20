@@ -16,7 +16,6 @@ public class Aktie {
 
 	public String getName() {
 		return name;
-	}
 
 	public void setName(String name) {
 		this.name = name;
@@ -61,5 +60,4 @@ public class Aktie {
 	public void setVolumenv(int volumenv) {
 		this.volumenv = volumenv;
 	}
-
 }

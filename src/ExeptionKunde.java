@@ -7,8 +7,6 @@ public class ExeptionKunde {
 		Bonität false
 		Einlage < 200'000.- Chf
 		*/
-		
-		if get.
 	}
 
 }
