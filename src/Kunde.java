@@ -20,23 +20,6 @@ public class Kunde {
 	
 	*/
 
-	private String Vorname = "Christian";
-	private String Nachname = "Gross";
-	private String Strasse = "Lorenweg";
-	private int Hausnummer = 27;
-	private String PrivatKontoNr = "123-456";
-	private String Email = "abc";
-	private int Telefon = +791234567;
-	private boolean Bonitaet = true;
-	private boolean Einlage = true;
-	
-	
-
-=======
-		
->>>>>>> branch 'Prototyp' of https://github.com/znacke/Trading-Robot-Project
-=======
-
 	public static void main (String[] args) {
 			
 	private String vorname = "Christian";
