@@ -2,7 +2,13 @@ import java.time.LocalDate;
 
 public class Kunde {
 
+<<<<<<< HEAD
 /*	private String Vorname;
+=======
+	public static void main (String[] args) {	
+/*	
+	private String Vorname;
+>>>>>>> branch 'Prototyp' of https://github.com/znacke/Trading-Robot-Project
 	private String Nachname;
 	private String Strasse;
 	private int Hausnummer;
@@ -13,6 +19,7 @@ public class Kunde {
 	private boolean Einlage;
 	
 	*/
+<<<<<<< HEAD
 
 	private String Vorname = "Christian";
 	private String Nachname = "Gross";
@@ -26,16 +33,33 @@ public class Kunde {
 	
 	
 
+=======
+		
+>>>>>>> branch 'Prototyp' of https://github.com/znacke/Trading-Robot-Project
 	int day = 10;
 	int month = 11;
+<<<<<<< HEAD
 	int year = 1986; 
 	
 
 	if(year<=2018-18)
 	{
+=======
+	int year = 1986;
+
+		
+	if (year <= 2018-18) {
+>>>>>>> branch 'Prototyp' of https://github.com/znacke/Trading-Robot-Project
 		System.out.println("is of age");
+<<<<<<< HEAD
 	}else
 	{
+=======
+		if (month <= 11) {
+			System.out.println("is of age");
+		}
+	}else {
+>>>>>>> branch 'Prototyp' of https://github.com/znacke/Trading-Robot-Project
 		System.out.println("IS NOT");
 	}
 
