@@ -1,7 +1,7 @@
 import java.time.LocalDate;
 
 public class Kunde {
-	
+
 	public static void main (String[] args) {	
 /*	
 	private String Vorname;
@@ -14,14 +14,17 @@ public class Kunde {
 	private boolean Bonitaet;
 	private boolean Einlage;
 	*/
-
+		
 	int day = 10;
 	int month = 11;
 	int year = 1986;
+
 		
-	
 	if (year <= 2018-18) {
 		System.out.println("is of age");
+		if (month <= 11) {
+			System.out.println("is of age");
+		}
 	}else {
 		System.out.println("IS NOT");
 	}
