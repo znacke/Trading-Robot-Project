@@ -10,17 +10,16 @@ public class Robot {
 //Schwellenwert wird mit Aktienkurs verglichen
 		if (a.getMinSchwellenwert() > a.getWert()) {
 			// jetzt soll Aktie gekauft werden (KAUFEN einbauen)
-			kaufen();
+			kaufen ();
 
 		}
 		if (a.getMaxSchwellenwert() < a.getWert()) {
 			// jetzt muss die Aktie verkauft werden (VERKAUFEN einbauen)
 			verkaufen();
 		}
-
 	}
 
-	private void kaufen() {
+	private void kaufen () {
 		System.out.println("kaufen");
 	}
 
