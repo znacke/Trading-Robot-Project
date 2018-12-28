@@ -3,9 +3,6 @@ public class Aktie {
 
 	// max wird fuer Verkauf genutzt
 	// min wird fuer Kauf genutzt
-	// volumenk ist das Volumen für den Kauf
-	// volumenv ist das Volumen für den Verkauf
-	// ES FEHLT DIE METHODE CHECKSCHWELLENWERT
 
 	private String name = "name";
 	private double wert = 100.58;
