@@ -20,7 +20,7 @@ public class WeitereKlasse1
 	        System.out.println("Number of shares:" + numberShares);
 	        System.out.println("Amount of purchase:" + buyPrice*numberShares);
 	        System.out.println("Amount of sell:" + sellPrice*numberShares);
-	        System.out.println("Transaction fee paid:" + 15 + 15);
+	        System.out.println("Transaction fee paid:" + 30);
 	        System.out.println("Net profit:" + (sellPrice*numberShares-buyPrice));
 	    }
 	}
