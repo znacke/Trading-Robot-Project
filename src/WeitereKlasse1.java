@@ -1,4 +1,4 @@
 
-public class WeitereKlasse1 {
+public class WeitereKlasse {
 
 }
