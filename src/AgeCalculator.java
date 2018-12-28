@@ -1,30 +1,13 @@
 
-public class AgeCalculator extends Kunde {
-
-	private int day;
-	private int month;
-	private int year;
-
-	public AgeCalculator(int day, int month, int year)
-	   {
-	      this.day = day;
-	      this.month = month;
-	      this.year = year;
-	   }
-
-	public int getDay() {
-		return this.day;
+public class AgeCalculator {
+	
+	// test klasse zum altercheck des kunden. wird am ende ersetzt und/oder in der kundenklasse eingesetzt
+	
+	public static void main(String[] args) {
+		
+		Alter alter = new Alter(2000,12,21);
+		System.out.println(alter.checkAge18());
+		
 	}
-
-	public int getMonth() {
-		return this.month;
-	}
-
-	public int getYear() {
-		return this.year;
-	}
-
-	public String toString() {
-		return year + " Years, " + month + " Months, " + day + " Days";
-	}
+	
 }
