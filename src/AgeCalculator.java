@@ -5,7 +5,7 @@ public class AgeCalculator {
 	
 	public static void main(String[] args) {
 		
-		Alter alter = new Alter(2000,12,21);
+		Alter alter = new Alter(2000,12,28);
 		System.out.println(alter.checkAge18());
 		
 	}
