@@ -13,7 +13,10 @@ public class Aktie {
 	public String getName() {
 		return name;
 	}
+<<<<<<< HEAD
+=======
 
+>>>>>>> branch 'Prototyp' of https://github.com/znacke/Trading-Robot-Project
 	public void setName(String name) {
 		this.name = name;
 	}
