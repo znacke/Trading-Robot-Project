@@ -1,4 +1,6 @@
-	public class StockTransaction
+import java.util.Scanner;
+
+public class WeitereKlasse1
 	{
 	    public static void main(String[]args) {
 	        String name;
@@ -23,4 +25,4 @@
 	    }
 	}
 
-}
+
