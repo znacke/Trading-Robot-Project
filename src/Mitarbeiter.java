@@ -16,13 +16,18 @@ public class Mitarbeiter {
 		peter.isEinlage();
 		peter.getAlter();
 		
+		Kunde hans = new Kunde("Hans", "Muster", "Musterstrasse1", 10, "132-654", "hans.muster@hotmail.com", "0781234567", true, true, 26);
+		
+	}
+}
+		
 	
 		
 	
 		
 			
-		}
-	}
+		
+		
 
 		/*
 	 * KundenprofieErstellen() auszahlen() FondKontoEroefnen() FondKontoAufloesen()
