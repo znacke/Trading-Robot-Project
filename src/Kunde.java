@@ -4,13 +4,13 @@ public class Kunde {
 	
 	//Eigenschaften
 
-	private String vorname;//
-	private String nachname;//
-	private String strasse;//
-	private int hausnummer;//
+	private String vorname;
+	private String nachname;
+	private String strasse;
+	private int hausnummer;
 	private String privatKontoNr;
-	private String email;//
-	private String telefon;//
+	private String email;
+	private String telefon;
 	
 	private boolean bonitaet;
 	private boolean einlage;
