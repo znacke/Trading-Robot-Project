@@ -18,7 +18,7 @@ public class Alter {
 		this.jahr = jahr;
 		this.monat = monat;
 		this.tag = tag;
-		geburtsdatum = LocalDate.of(1994, 9, 01);
+		geburtsdatum = LocalDate.of(jahr, monat, tag);
 
 	}
 // alterscheck ob kunde 18+ oder nicht
