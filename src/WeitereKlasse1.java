@@ -7,7 +7,7 @@ public class WeitereKlasse1
 	        int numberShares;
 	        double buyPrice,sellPrice;
 	        Scanner input = new Scanner(System.in);
-	        System.out.print("Wie heisst der Kunde");
+	        System.out.print("Wie heisst der Kunde?");
 	        name=input.nextLine();
 	        System.out.print("Welche Aktie wünscht der Kunde?");
 	        numberShares=input.nextInt();
