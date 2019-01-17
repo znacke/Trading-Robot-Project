@@ -1,0 +1,7 @@
+Vorname: Max
+Nachname: Beispiel
+Strasse: Diesestrasse
+Hausnummer: 1234
+Telefon: 076 111 2233
+EMail: MaxBeispiel@gmail.com
+Privatkontonummer: A1234 567890 X
