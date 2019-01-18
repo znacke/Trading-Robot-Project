@@ -10,13 +10,8 @@ public class Aktie {
 	private int volumen = 2;
 
 	public String getName() {
-		return name;
-<<<<<<< HEAD
-	}
-=======
-	}
+		return name;}
 
->>>>>>> branch 'Prototyp' of https://github.com/znacke/Trading-Robot-Project
 	public void setName(String name) {
 		this.name = name;
 	}
@@ -45,15 +40,9 @@ public class Aktie {
 		this.minSchwellenwert = minSchwellenwert;
 	}
 
-<<<<<<< HEAD
+
 	public int getVolumen() {
-=======
-<<<<<<< HEAD
-	public int getVolumen() {
-=======
-	public int getVolumen(int volumen) {
->>>>>>> branch 'Prototyp' of https://github.com/znacke/Trading-Robot-Project
->>>>>>> branch 'Prototyp' of https://github.com/znacke/Trading-Robot-Project
+
 		return volumen;
 	}
 
@@ -61,10 +50,4 @@ public class Aktie {
 		this.volumen = volumen;
 	}
 
-<<<<<<< HEAD
-	}
-
-=======
-
 }
->>>>>>> branch 'Prototyp' of https://github.com/znacke/Trading-Robot-Project
