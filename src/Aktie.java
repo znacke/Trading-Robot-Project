@@ -41,7 +41,6 @@ public class Aktie {
 
 
 	public int getVolumen() {
-
 		return volumen;
 	}
 
