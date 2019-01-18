@@ -42,6 +42,7 @@ public class Mitarbeiter {
 	}
 
 	public static void erstelleFondsKonto() {
+		
 
 	}
 
