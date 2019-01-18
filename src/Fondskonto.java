@@ -3,7 +3,11 @@ public class Fondskonto {
 	//Eigenschaften
 	
 	private String fondsKonto; // Initialisierung
-	private double fondsKontoStand = 200000;
+	private double fondsKontoStand = 0;
+	
+	public Fondskonto (double startWert){
+		this.fondsKontoStand = startWert;
+	}
 	
 	public void abheben (double summe) {
 	fondsKontoStand = fondsKontoStand - summe;
