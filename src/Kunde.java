@@ -1,8 +1,8 @@
 import java.time.LocalDate;
 
 public class Kunde {
-	
-	//Eigenschaften
+
+	// Eigenschaften
 
 	private String vorname;
 	private String nachname;
@@ -11,41 +11,19 @@ public class Kunde {
 	private String privatKontoNr;
 	private String email;
 	private String telefon;
-	
+
 	private boolean bonitaet;
 	private boolean einlage;
-	private int alter; //abgeändert wegen getter und setter
-	
-	
-	//Konstruktoren
-	
+	private int alter; // abgeändert wegen getter und setter
+
+	// Konstruktoren
+
 	public Kunde() {
-		
-	}
-	
-	public Kunde(String vorname, String nachname, String strasse, int hausnummer, String privatKontoNr, String email, String telefon, boolean bonitaet, boolean einlage, int alter) {
-<<<<<<< HEAD
-=======
-		this.setVorname(vorname);
-		this.setNachname(nachname);
-		this.setStrasse(strasse);
-		this.setHausnummer(hausnummer);
-		this.setPrivatKontoNr(privatKontoNr);
-		this.setemail(email);
-		this.setTelefon(telefon);
-		this.setBonitaet(bonitaet);
-		this.setEinlage(einlage);
-		this.setAlter(alter);
-		
+
 	}
 
-	public String getVorname() {
-		System.out.println("Der Vorname des Kunden ist: " + vorname);
-		return vorname;
-	}
-
-	public void setVorname(String vorname) {
->>>>>>> branch 'Prototyp' of https://github.com/znacke/Trading-Robot-Project
+	public Kunde(String vorname, String nachname, String strasse, int hausnummer, String privatKontoNr, String email,
+			String telefon, boolean bonitaet, boolean einlage, int alter) {
 		this.vorname = vorname;
 		this.nachname = nachname;
 		this.strasse = strasse;
@@ -56,9 +34,28 @@ public class Kunde {
 		this.bonitaet = bonitaet;
 		this.einlage = einlage;
 		this.alter = alter;
-		
+
 	}
-}
+
+//	public String getVorname() {
+//		System.out.println("Der Vorname des Kunden ist: " + vorname);
+//		return vorname;
+	}
+
+//	public void setVorname(String vorname) {
+//		this.vorname = vorname;
+//		this.nachname = nachname;
+//		this.strasse = strasse;
+//		this.hausnummer = hausnummer;
+//		this.privatKontoNr = privatKontoNr;
+//		this.email = email;
+//		this.telefon = telefon;
+//		this.bonitaet = bonitaet;
+//		this.einlage = einlage;
+//		this.alter = alter;
+
+	
+
 //		this.setVorname(vorname);
 //		this.setNachname(nachname);
 //		this.setStrasse(strasse);
