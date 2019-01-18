@@ -9,6 +9,10 @@ public class Fondskonto {
 	fondsKontoStand = fondsKontoStand - summe;
 	}
 	
+	public void einzahlen (double summe) {
+		fondsKontoStand = fondsKontoStand + summe;
+	}
+	
 	//Konstruktor
 	
 	public String getFondsKonto() {
