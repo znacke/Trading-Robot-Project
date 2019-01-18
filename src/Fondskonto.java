@@ -1,11 +1,24 @@
-
 public class Fondskonto {
 	
 	//Eigenschaften
 	
 	private String fondsKonto; // Initialisierung
-	private double fondsKontoStand; // Initialisierung
+	private double fondsKontoStand = 0;
 	
+	public Fondskonto (double startWert){
+		this.fondsKontoStand = startWert;
+	}
+	
+	public void abheben (double summe) {
+	fondsKontoStand = fondsKontoStand - summe;
+	}
+	
+	public void einzahlen (double summe) {
+		double realerBetrag = summe - (summe * 0.0025);
+		System.out.println("Die Gebühr beträgt: " + summe*0.0025 + " Franken");
+		fondsKontoStand = fondsKontoStand + realerBetrag;
+		
+	}
 	
 	//Konstruktor
 	

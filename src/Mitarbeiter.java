@@ -8,8 +8,11 @@ public class Mitarbeiter {
 //		Kunde hans = new Kunde("Hans", "Muster", "Musterstrasse1", 10, "132-654", "hans.muster@hotmail.com",
 //				"0781234567", true, true, 26);¨
 
-		Mitarbeiter m = new Mitarbeiter();
-		m.erstelleKunde("Bojan", "Eric", "Musterstrasse", 123, "abc-123", "bojan.eric@gmx.ch", "0765858585", true, false, 25);
+		Mitarbeiter michael = new Mitarbeiter();
+		michael.erstelleKunde("Bojan", "Eric", "Musterstrasse", 123, "abc-123", "bojan.eric@gmx.ch", "0765858585", true, false, 25);
+		
+		Mitarbeiter adrian = new Mitarbeiter();
+		adrian.erstelleFondsKonto("1234-5678", 234000.55);
 
 	}
 
@@ -41,7 +44,10 @@ public class Mitarbeiter {
 
 	}
 
-	public static void erstelleFondsKonto() {
+	public Fondskonto erstelleFondsKonto(String fondsKonto, double fondsKontoStand) {
+		Fondskonto f = new Fondskonto(fondsKonto, fondsKontoStand);
+		System.out.println("");
+		return f;
 		
 
 	}
