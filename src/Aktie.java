@@ -1,7 +1,6 @@
 
 public class Aktie {
 
-	// max wird fuer Verkauf genutzt
 	// min wird fuer Kauf genutzt
 
 	private String name = "name";
@@ -13,10 +12,6 @@ public class Aktie {
 	public String getName() {
 		return name;
 	}
-<<<<<<< HEAD
-=======
-
->>>>>>> branch 'Prototyp' of https://github.com/znacke/Trading-Robot-Project
 	public void setName(String name) {
 		this.name = name;
 	}
@@ -45,7 +40,7 @@ public class Aktie {
 		this.minSchwellenwert = minSchwellenwert;
 	}
 
-	public int getVolumen(int volumen) {
+	public int getVolumen() {
 		return volumen;
 	}
 
