@@ -10,7 +10,10 @@ public class Fondskonto {
 	}
 	
 	public void einzahlen (double summe) {
-		fondsKontoStand = fondsKontoStand + summe;
+		double realerBetrag = summe - (summe * 0.0025);
+		System.out.println("Die Gebühr beträgt: " + summe*0.0025 + " Franken");
+		fondsKontoStand = fondsKontoStand + realerBetrag;
+		
 	}
 	
 	//Konstruktor

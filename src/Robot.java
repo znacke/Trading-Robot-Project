@@ -38,7 +38,7 @@ public class Robot {
 	private void verkaufen(Aktie a) {
 		System.out.println("Es werden " + a.getVolumen() + " Aktien zum Wert von " + a.getWert() + " Franken verkauft"
 				+ " was einem Total von " + a.getWert() * a.getVolumen() + " Franken entspricht");
-		fondskonto.einzahlen(a.getWert()*a.getVolumen() - (0.025*(a.getWert()*a.getVolumen())));
+		fondskonto.einzahlen(a.getWert()*a.getVolumen());
 		System.out.println("Der Fondskontostand beträngt nun: " + fondskonto.getFondsKontoStand() + " Franken");
 		// wenn verkauft wird müssen Gebühren noch ausgerechnet werden
 
