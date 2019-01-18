@@ -10,6 +10,7 @@ public class Mitarbeiter {
 
 		Mitarbeiter m = new Mitarbeiter();
 		m.erstelleKunde("Bojan", "Eric", "Musterstrasse", 123, "abc-123", "bojan.eric@gmx.ch", "0765858585", true, false, 25);
+		
 
 	}
 
@@ -41,7 +42,9 @@ public class Mitarbeiter {
 
 	}
 
-	public static void erstelleFondsKonto() {
+	public Fondskonto erstelleFondsKonto(String fondsKonto, double fondsKontoStand) {
+		Fondskonto bojan = new Fondskonto(fondsKonto, fondsKontoStand);
+		return bojan;
 		
 
 	}

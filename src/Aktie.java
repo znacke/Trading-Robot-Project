@@ -1,4 +1,3 @@
-
 public class Aktie {
 
 	// min wird fuer Kauf genutzt
@@ -42,7 +41,6 @@ public class Aktie {
 
 
 	public int getVolumen() {
-
 		return volumen;
 	}
 
