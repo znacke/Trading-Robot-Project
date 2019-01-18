@@ -1,19 +1,20 @@
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
 
 public class AgeCalculator {
 
-	// test klasse zum altercheck des kunden. wird am ende ersetzt und/oder in der
-	// kundenklasse eingesetzt
+//Alterscheck des Kunden: Kunde => 18 Jahre
 
 	public static void main(String[] args) {
-<<<<<<< HEAD
 		
-		Alter alter = new Alter(2006,12,28);
-=======
-
-		Alter alter = new Alter(2000, 12, 23);
-		;
-
->>>>>>> branch 'Prototyp' of https://github.com/znacke/Trading-Robot-Project
+		 JPanel panel = new JPanel();
+	        panel.add(new JLabel("Bonität das Kunden: "));
+	        JTextField textField = new JTextField(10);
+	        panel.add(textField);
+		
+		Alter alter = new Alter(1992,12,28);
+		
 		System.out.println(alter.checkAge18());
 
 	}

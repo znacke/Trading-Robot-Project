@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class WeitereKlasse1
+public class KundeAnlegen
 	{
 	    public static void main(String[]args) {
 	        String name;

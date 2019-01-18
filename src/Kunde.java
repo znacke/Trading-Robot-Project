@@ -34,6 +34,7 @@ public class Kunde {
 		this.setBonitaet(bonitaet);
 		this.setEinlage(einlage);
 		this.setAlter(alter);
+		
 	}
 
 	public String getVorname() {
