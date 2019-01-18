@@ -40,7 +40,7 @@ public class Kunde {
 //	public String getVorname() {
 //		System.out.println("Der Vorname des Kunden ist: " + vorname);
 //		return vorname;
-//	}
+	}
 
 //	public void setVorname(String vorname) {
 //		this.vorname = vorname;
@@ -54,7 +54,7 @@ public class Kunde {
 //		this.einlage = einlage;
 //		this.alter = alter;
 
-	}
+	
 
 //		this.setVorname(vorname);
 //		this.setNachname(nachname);
