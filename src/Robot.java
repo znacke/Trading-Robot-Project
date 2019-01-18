@@ -29,9 +29,10 @@ public class Robot {
 
 	private void kaufen (Aktie a) {
 		
-		//System.out.println(fondskonto.getFondsKontoStand() - (a.getVolumen()*a.getWert()));
-		System.out.println(a.ge);
-	
+		System.out.println("Es werden " + a.getVolumen() + " Aktien zum Wert von " + a.getWert() +" Franken gekauft" + " was einem Total von " +a.getWert()*a.getVolumen()+ " Franken entspricht");
+	fondskonto.abheben (a.getWert()*a.getVolumen());
+	System.out.println("Der Fondskontostand beträngt nun: " + fondskonto.getFondsKontoStand() + " Franken");
+		
 	}
 
 	private void verkaufen(Aktie a) {

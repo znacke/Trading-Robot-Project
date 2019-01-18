@@ -1,11 +1,13 @@
-
 public class Fondskonto {
 	
 	//Eigenschaften
 	
 	private String fondsKonto; // Initialisierung
-	private double fondsKontoStand; // Initialisierung
+	private double fondsKontoStand = 200000;
 	
+	public void abheben (double summe) {
+	fondsKontoStand = fondsKontoStand - summe;
+	}
 	
 	//Konstruktor
 	
