@@ -1,0 +1,10 @@
+-Age Calc (DONE)
+-Kunde (DONE)
+-Mitarbeiter
+-Robot
+-Schwellenwerte
+-Kauf
+-Verkauf
+-Gebuehren
+-Fondkonto
+-Aktie

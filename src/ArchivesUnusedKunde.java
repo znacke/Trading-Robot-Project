@@ -3,11 +3,11 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
-public class KundeNew {
+public class ArchivesUnusedKunde {
 
-	public static void main(String[] args) throws FileNotFoundException, IOException {
+/*	public static void main(String[] args) throws FileNotFoundException, IOException {
 
-		if (args.length < 7)
+		if (args.length < 8)
 			throw new RuntimeException("Insufficient input");
 		String mode = args[0];
 		if (mode.compareTo("Kundeerstellung") == 0) {
@@ -38,6 +38,6 @@ public class KundeNew {
 
 		}
 
-	}
+	} */
 
 }

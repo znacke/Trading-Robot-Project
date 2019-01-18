@@ -24,6 +24,28 @@ public class Kunde {
 	}
 	
 	public Kunde(String vorname, String nachname, String strasse, int hausnummer, String privatKontoNr, String email, String telefon, boolean bonitaet, boolean einlage, int alter) {
+<<<<<<< HEAD
+=======
+		this.setVorname(vorname);
+		this.setNachname(nachname);
+		this.setStrasse(strasse);
+		this.setHausnummer(hausnummer);
+		this.setPrivatKontoNr(privatKontoNr);
+		this.setemail(email);
+		this.setTelefon(telefon);
+		this.setBonitaet(bonitaet);
+		this.setEinlage(einlage);
+		this.setAlter(alter);
+		
+	}
+
+	public String getVorname() {
+		System.out.println("Der Vorname des Kunden ist: " + vorname);
+		return vorname;
+	}
+
+	public void setVorname(String vorname) {
+>>>>>>> branch 'Prototyp' of https://github.com/znacke/Trading-Robot-Project
 		this.vorname = vorname;
 		this.nachname = nachname;
 		this.strasse = strasse;
