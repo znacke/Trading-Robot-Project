@@ -1,33 +1,23 @@
+import java.io.Serializable;
 
-public class Mitarbeiter {
-
-	public static void main(String[] args) {
-
-//		Kunde peter = new Kunde("Peter", "Muster", "Lorenweg", 27, "123-456", "peter.muster@hotmail.com",
-//				"078 704 51 89", true, true, 20);
-//		Kunde hans = new Kunde("Hans", "Muster", "Musterstrasse1", 10, "132-654", "hans.muster@hotmail.com",
-//				"0781234567", true, true, 26);¨
-
-		Mitarbeiter michael = new Mitarbeiter();
-		michael.erstelleKunde("Bojan", "Eric", "Musterstrasse", 123, "abc-123", "bojan.eric@gmx.ch", "0765858585", true, false, 25);
-		
-		Mitarbeiter adrian = new Mitarbeiter();
-		adrian.erstelleFondsKonto("1234-5678", 234000.55);
-		
-		
-
+public class Mitarbeiter implements Serializable {
+	
+	private Kunde kunde;
+	
+	public Mitarbeiter() {
 	}
 
 	public Kunde erstelleKunde(String vorname, String nachname, String strasse, int hausnummer, String privatKontoNr,
-			String email, String telefon, boolean bonitaet, boolean einlage, int alter) {
+			String email, String telefon, boolean bonitaet, boolean einlage) {
 		Kunde k = new Kunde("Hans", "Muster", "Musterstrasse", 1, "123-456", "muster@muster.ch", "781234567", true,
-				true, 22);
+				true);
+		Alter alter = new Alter(1992, 12, 28);
 
 		if (bonitaet == false || einlage == false) {
 
-		System.out.println("DER KUNDE KONNTE NICHT ERSTELLT WERDEN!");
-		} else 
-		System.out.println("Der Kunde " + vorname + " " + nachname + " wurde erstellt");
+			System.out.println("DER KUNDE KONNTE NICHT ERSTELLT WERDEN!");
+		} else
+			System.out.println("Der Kunde " + vorname + " " + nachname + " wurde erstellt");
 		System.out.println("Vorname: " + vorname);
 		System.out.println("Nachname: " + nachname);
 		System.out.println("Alter: " + alter);
@@ -37,6 +27,15 @@ public class Mitarbeiter {
 		System.out.println("Telefonnummer: " + telefon);
 		System.out.println("Bonität erfüllt? " + bonitaet);
 		System.out.println("Einlage erfüllt? " + einlage);
+		System.out.println("-----");
+		System.out.println("");
+		System.out.println("Kunde ist 18 Jahre alt: " + alter.checkAge18());
+		System.out.println("Bonität des Kunden: " + ExeptionKunde.result);
+		System.out.println(
+				"Der Kunde hat eine Einlage von mindestens 200'000.- CHF getroffen: " + ExeptionKunde.getKontoStand());
+		System.out.println("");
+		System.out.println("-----");
+		System.out.println("");
 
 		return k;
 
@@ -44,7 +43,8 @@ public class Mitarbeiter {
 
 	public double auszahlenKonto(Fondskonto fondskonto, double betrag) {
 		fondskonto.setFondsKontoStand(fondskonto.getFondsKontoStand() - betrag);
-		System.out.println("Überweisung ist an den Kunden erfolgt, der neue Kontostand ist: " + fondskonto.getFondsKonto());
+		System.out.println(
+				"Überweisung ist an den Kunden erfolgt, der neue Kontostand ist: " + fondskonto.getFondsKonto());
 		return fondskonto.getFondsKontoStand();
 	}
 
@@ -54,7 +54,6 @@ public class Mitarbeiter {
 		System.out.println("Fonds-Konto: " + fondsKonto);
 		System.out.println("Fonds-Kontostand beträgt aktuell: " + fondsKontoStand);
 		return f;
-		
 
 	}
 
@@ -66,7 +65,9 @@ public class Mitarbeiter {
 
 	}
 
-}
+	}
+
+
 
 /*
  * KundenprofieErstellen() auszahlen() FondKontoEroefnen() FondKontoAufloesen()

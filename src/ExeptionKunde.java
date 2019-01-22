@@ -11,11 +11,19 @@ import javax.swing.JTextField;
 public class ExeptionKunde {
 
 	/*
-	 * Author: Michael 
-	 * Klasse - Optionen JOptionsPane zum püfen der Bonität und
+	 * Author: Michael Klasse - Optionen JOptionsPane zum püfen der Bonität und
 	 * Einlage des Kunden. Beide Optionen sollen true ausgeben und eine Einlage des
 	 * Kunden angeben.
 	 */
+
+	public static String s;
+	public static boolean result;
+
+	public static double getKontoStand() {
+		return kontoStand;
+	}
+
+	public static double kontoStand = 123;
 
 	public static void main(String[] args) {
 		Object[] options1 = { "True", "False" };
@@ -55,12 +63,12 @@ public class ExeptionKunde {
 // if true = success message
 		if (result2 == JOptionPane.YES_OPTION) {
 			JOptionPane.showMessageDialog(null, "Eingezahlt in das Kundenkonto sind: " + textField2.getText());
-			String s = textField2.getText();
-			double number1 = Double.parseDouble(s);
+			s = textField2.getText();
+			kontoStand = Double.parseDouble(s);
 
 //check if Konoteinzahlung = oder > also 200'000
-			if (number1 >= 200000) {
-				System.out.println("Auf dem Kundenkonto ist: " + number1 + " CHF");
+			if (kontoStand >= 200) {
+				System.out.println("Auf dem Kundenkonto ist: " + kontoStand + " CHF");
 			}
 // if false = error message			
 			else {

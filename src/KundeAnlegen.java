@@ -1,6 +1,8 @@
 import java.util.Scanner;
 
 public class KundeAnlegen
+
+/* Klasse wird im moment nicht gebruacht
 	{
 	    public static void main(String[]args) {
 	        String name;
@@ -25,4 +27,4 @@ public class KundeAnlegen
 	    }
 	}
 
-
+*/

@@ -1,6 +1,7 @@
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class Kunde {
+public class Kunde implements Serializable {
 
 	// Eigenschaften
 
@@ -11,10 +12,10 @@ public class Kunde {
 	private String privatKontoNr;
 	private String email;
 	private String telefon;
+	private Fondskonto fondskonto;
 
 	private boolean bonitaet;
 	private boolean einlage;
-	private int alter; // abgeändert wegen getter und setter
 
 	// Konstruktoren
 
@@ -23,7 +24,7 @@ public class Kunde {
 	}
 
 	public Kunde(String vorname, String nachname, String strasse, int hausnummer, String privatKontoNr, String email,
-			String telefon, boolean bonitaet, boolean einlage, int alter) {
+			String telefon, boolean bonitaet, boolean einlage) {
 		this.vorname = vorname;
 		this.nachname = nachname;
 		this.strasse = strasse;
@@ -33,14 +34,97 @@ public class Kunde {
 		this.telefon = telefon;
 		this.bonitaet = bonitaet;
 		this.einlage = einlage;
-		this.alter = alter;
 
+	}
+
+	public Fondskonto getFondskonto() {
+		return fondskonto;
+	}
+
+	public void setFondskonto(Fondskonto fondskonto) {
+		this.fondskonto = fondskonto;
+	}
+
+	public String toString() {
+		return "Vorname: " + vorname + "FondsKontostand: " + fondskonto.getFondsKontoStand();
+	}
+
+	public String getVorname() {
+		return vorname;
+	}
+
+	public void setVorname(String vorname) {
+		this.vorname = vorname;
+	}
+
+	public String getNachname() {
+		return nachname;
+	}
+
+	public void setNachname(String nachname) {
+		this.nachname = nachname;
+	}
+
+	public String getStrasse() {
+		return strasse;
+	}
+
+	public void setStrasse(String strasse) {
+		this.strasse = strasse;
+	}
+
+	public int getHausnummer() {
+		return hausnummer;
+	}
+
+	public void setHausnummer(int hausnummer) {
+		this.hausnummer = hausnummer;
+	}
+
+	public String getPrivatKontoNr() {
+		return privatKontoNr;
+	}
+
+	public void setPrivatKontoNr(String privatKontoNr) {
+		this.privatKontoNr = privatKontoNr;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getTelefon() {
+		return telefon;
+	}
+
+	public void setTelefon(String telefon) {
+		this.telefon = telefon;
+	}
+
+	public boolean isBonitaet() {
+		return bonitaet;
+	}
+
+	public void setBonitaet(boolean bonitaet) {
+		this.bonitaet = bonitaet;
+	}
+
+	public boolean isEinlage() {
+		return einlage;
+	}
+
+	public void setEinlage(boolean einlage) {
+		this.einlage = einlage;
 	}
 
 //	public String getVorname() {
 //		System.out.println("Der Vorname des Kunden ist: " + vorname);
 //		return vorname;
-	}
+}
 
 //	public void setVorname(String vorname) {
 //		this.vorname = vorname;
@@ -53,8 +137,6 @@ public class Kunde {
 //		this.bonitaet = bonitaet;
 //		this.einlage = einlage;
 //		this.alter = alter;
-
-	
 
 //		this.setVorname(vorname);
 //		this.setNachname(nachname);

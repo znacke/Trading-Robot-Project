@@ -1,4 +1,6 @@
-public class Fondskonto {
+import java.io.Serializable;
+
+public class Fondskonto implements Serializable{
 
 	private String kontoNr; 
 	private double kontoStand = 0;
