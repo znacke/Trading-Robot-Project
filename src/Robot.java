@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 
+import com.sun.xml.internal.ws.api.pipe.ThrowableContainerPropertySet;
+
 public class Robot {
 
 	Fondskonto fondskonto;
@@ -16,8 +18,12 @@ public class Robot {
 			// jetzt soll Aktie gekauft werden (KAUFEN einbauen)
 			// muss geprüft werden ob genug Geld vorhanden ist um zu kaufen
 			// muss den Kaufbetrag vom Fondskontostand abziehen
-			kaufen(a);
-
+			boolean summeOk = fondskonto.checkAmmount(a.getWert() * a.getVolumen());
+			if (summeOk) {
+				kaufen(a);
+			} else {
+				System.out.println("Der Saldo auf dem Fondskonto ist nicht ausreichend");
+			}
 		}
 		if (a.getMaxSchwellenwert() < a.getWert()) {
 			// jetzt muss die Aktie verkauft werden (VERKAUFEN einbauen)
@@ -38,7 +44,7 @@ public class Robot {
 	private void verkaufen(Aktie a) {
 		System.out.println("Es werden " + a.getVolumen() + " Aktien zum Wert von " + a.getWert() + " Franken verkauft"
 				+ " was einem Total von " + a.getWert() * a.getVolumen() + " Franken entspricht");
-		fondskonto.einzahlen(a.getWert()*a.getVolumen());
+		fondskonto.einzahlen(a.getWert() * a.getVolumen());
 		System.out.println("Der Fondskontostand beträngt nun: " + fondskonto.getFondsKontoStand() + " Franken");
 		// wenn verkauft wird müssen Gebühren noch ausgerechnet werden
 
