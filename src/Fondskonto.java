@@ -5,18 +5,7 @@ public class Fondskonto {
 	
 	public Fondskonto (double startWert){
 		this.kontoStand = startWert;
-
-
-	private String fondsKonto; 
-	private double fondsKontoStand = 0;
-
-	public Fondskonto(double startWert) {
-		this.fondsKontoStand = startWert;
-
-	
-	public void abheben (double summe) {
-	kontoStand = kontoStand - summe;
-
+	}
 	/**
 	 * Diese Methode sorgt dafür, dass der Kaufbetrag vom Fonskontostand abgezogen wird
 	 */
