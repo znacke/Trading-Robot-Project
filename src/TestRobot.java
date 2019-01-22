@@ -3,7 +3,7 @@ public class TestRobot {
 	
 public static void main(String[] args) {
 	
-	Fondskonto f = new Fondskonto (0);
+	Fondskonto f = new Fondskonto (100);
 	Robot r = new Robot (f);
 	Aktie a = new Aktie ();
 	a.setWert(30);

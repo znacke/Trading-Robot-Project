@@ -18,7 +18,7 @@ public class Robot {
 			// jetzt soll Aktie gekauft werden (KAUFEN einbauen)
 			// muss geprüft werden ob genug Geld vorhanden ist um zu kaufen
 			// muss den Kaufbetrag vom Fondskontostand abziehen
-			boolean summeOk = fondskonto.checkAmmount(a.getWert() * a.getVolumen());
+			boolean summeOk = fondskonto.checkAmmount(a.getWert()*a.getVolumen());
 			if (summeOk) {
 				kaufen(a);
 			} else {

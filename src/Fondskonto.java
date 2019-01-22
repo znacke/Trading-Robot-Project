@@ -2,7 +2,7 @@ public class Fondskonto {
 
 	// Eigenschaften
 
-	private String fondsKonto; // Initialisierung
+	private String fondsKonto; //Initialisierung
 	private double fondsKontoStand = 0;
 
 	public Fondskonto(double startWert) {
