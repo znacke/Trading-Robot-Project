@@ -3,13 +3,13 @@ public class TestRobot {
 	
 public static void main(String[] args) {
 	
-	Fondskonto f = new Fondskonto (200000);
+	Fondskonto f = new Fondskonto (100000);
 	Robot r = new Robot (f);
 	Aktie a = new Aktie ();
-	a.setWert(40);
+	a.setWert(210);
 	a.setMinSchwellenwert(50);
-	a.setMaxSchwellenwert(150);
-	a.setVolumen(50);
+	a.setMaxSchwellenwert(200);
+	a.setVolumen(100);
 	
 	r.checkSchwellenwert(a);
 }
