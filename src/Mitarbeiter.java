@@ -13,6 +13,8 @@ public class Mitarbeiter {
 		
 		Mitarbeiter adrian = new Mitarbeiter();
 		adrian.erstelleFondsKonto("1234-5678", 234000.55);
+		
+		
 
 	}
 
@@ -40,7 +42,11 @@ public class Mitarbeiter {
 
 	}
 
-	public static void auszahlenKonto() {
+	public double auszahlenKonto(Fondskonto fondskonto, double betrag) {
+		fondskonto.setFondsKontoStand (fondskonto.getFondsKontoStand() - betrag);
+		System.out.println("Überweisung ist an den Kunden erfolgt, der neue Kontostand ist: " + fondskonto.getFondsKonto());
+		return fondskonto.getFondsKontoStand();
+		
 
 	}
 
