@@ -43,7 +43,7 @@ public class Mitarbeiter {
 	}
 
 	public double auszahlenKonto(Fondskonto fondskonto, double betrag) {
-		fondskonto.setFondsKontoStand (fondskonto.getFondsKontoStand() - betrag);
+		fondskonto.setFondsKontoStand(fondskonto.getFondsKontoStand() - betrag);
 		System.out.println("Überweisung ist an den Kunden erfolgt, der neue Kontostand ist: " + fondskonto.getFondsKonto());
 		return fondskonto.getFondsKontoStand();
 	}
