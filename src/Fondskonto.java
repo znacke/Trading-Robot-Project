@@ -1,8 +1,7 @@
 public class Fondskonto {
 
-	// Eigenschaften
 
-	private String fondsKonto; //Initialisierung
+	private String fondsKonto; 
 	private double fondsKontoStand = 0;
 
 	public Fondskonto(double startWert) {
@@ -61,6 +60,5 @@ public class Fondskonto {
 
 	}
 
-	// Methoden
 
 }
