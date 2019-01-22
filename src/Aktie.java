@@ -1,6 +1,5 @@
 public class Aktie {
 
-	// min wird fuer Kauf genutzt
 
 	private String name = "name";
 	private double wert = 100.58;
