@@ -59,6 +59,8 @@ public class Mitarbeiter implements Serializable {
 
 	public static void auflösenFondsKonto() {
 
+		
+		
 	}
 
 	public static void erhebenGebuehren() {

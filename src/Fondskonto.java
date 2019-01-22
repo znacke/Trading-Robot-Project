@@ -4,6 +4,8 @@ public class Fondskonto implements Serializable{
 
 	private String kontoNr; 
 	private double kontoStand = 0;
+	private double openingDate;
+	
 	
 	public Fondskonto (double startWert){
 		this.kontoStand = startWert;
@@ -13,7 +15,7 @@ public class Fondskonto implements Serializable{
 	 */
 
 	public void abheben(double summe) {
-		fondsKontoStand = fondsKontoStand - summe;
+		kontoStand = kontoStand - summe;
 	}
 
 	/**
@@ -26,14 +28,14 @@ public class Fondskonto implements Serializable{
 		kontoStand = kontoStand + realerBetrag;
 
 		System.out.println("Die Gebühr beträgt: " + summe * 0.0025 + " Franken");
-		fondsKontoStand = fondsKontoStand + realerBetrag;
+		kontoStand = kontoStand + realerBetrag;
 	}
 
 	/**
 	 * Diese Methode prüft, ob der Kaufbetrag den Fondskontostand übersteigt
 	 */
 	public boolean checkAmmount(double summe) {
-		if (fondsKontoStand < summe) {
+		if (kontoStand < summe) {
 			return false;
 
 		} else
