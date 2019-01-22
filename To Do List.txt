@@ -1,10 +1,11 @@
 -Age Calc (DONE)
 -Kunde (DONE)
+-Kunde Exception (DONE)
 -Mitarbeiter
--Robot
--Schwellenwerte
--Kauf
--Verkauf
--Gebuehren
--Fondkonto
--Aktie
+-Robot (DONE)
+-Schwellenwerte ~(DONE)
+-Kauf ~(DONE)
+-Verkauf ~(DONE)
+-Gebuehren ~(DONE)
+-Fondkonto ~(DONE)
+-Aktie ~(DONE)

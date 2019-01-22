@@ -10,27 +10,29 @@ import javax.swing.JTextField;
 
 public class ExeptionKunde {
 
+//Klasse - Optionen JOptionsPane zum püfen der Bonität und Einlage des Kunden
 	public static void main(String[] args) {
 		Object[] options1 = { "True", "False" };
 		Object[] options2 = { "Ok" };
 
-// Bonität des Kunden Optionpanel
+// JOptionsPane 1 - Bonität des Kunden Optionpanel
 		JPanel panel = new JPanel();
 		panel.add(new JLabel("Bonität das Kunden: "));
 
 		int result = JOptionPane.showOptionDialog(null, panel, "Enter a Number", JOptionPane.YES_NO_CANCEL_OPTION,
 				JOptionPane.PLAIN_MESSAGE, null, options1, null);
+
+// if true = success message
 		if (result == JOptionPane.YES_OPTION) {
 			JOptionPane.showMessageDialog(null, "Der Kunde hat genügend Finanzielle Mittel!");
-// if true = success message
+
+// if false = error message			
 		} else {
 			JOptionPane.showMessageDialog(null, "Der Kunde hat NICHT genügend Finanzielle Mittel!");
 			System.out.println("---FEHLER---");
 			System.out.println("Der Kunde hat NICHT genügend Finanzielle Mittel!");
-// if false = error message
-
 		}
-//Einlage des Kunden Optionspanel
+//JOptionsPane 2 - Einlage des Kunden Optionspanel
 		JPanel panel2 = new JPanel();
 		panel2.add(new JLabel("Einzahlung des Kunden ist über 200'000CHF und beträgt: "));
 
@@ -44,6 +46,7 @@ public class ExeptionKunde {
 		int result2 = JOptionPane.showOptionDialog(null, panel2, "Enter a Number", JOptionPane.YES_NO_CANCEL_OPTION,
 				JOptionPane.PLAIN_MESSAGE, null, options2, null);
 
+// if true = success message
 		if (result2 == JOptionPane.YES_OPTION) {
 			JOptionPane.showMessageDialog(null, "Eingezahlt in das Kundenkonto sind: " + textField2.getText());
 			String s = textField2.getText();
@@ -52,13 +55,15 @@ public class ExeptionKunde {
 //check if Konoteinzahlung = oder > also 200'000
 			if (number1 >= 200000) {
 				System.out.println("Auf dem Kundenkonto ist: " + number1 + " CHF");
-			} else {
+			}
+// if false = error message			
+			else {
 				System.out.println("---FEHLER---");
 				System.out.println("Auf dem Kundenkonto ist weniger als 200'000.- CHF.");
 				System.out.println("Minimumbetrag auf dem Konto ist nicht erreicht!");
 			}
 
-		} 
+		}
 
 	}
 }
