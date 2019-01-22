@@ -46,8 +46,6 @@ public class Mitarbeiter {
 		fondskonto.setFondsKontoStand (fondskonto.getFondsKontoStand() - betrag);
 		System.out.println("Überweisung ist an den Kunden erfolgt, der neue Kontostand ist: " + fondskonto.getFondsKonto());
 		return fondskonto.getFondsKontoStand();
-		
-
 	}
 
 	public Fondskonto erstelleFondsKonto(String fondsKonto, double fondsKontoStand) {
