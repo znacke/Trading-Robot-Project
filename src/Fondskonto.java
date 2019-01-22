@@ -1,4 +1,14 @@
 public class Fondskonto {
+<<<<<<< HEAD
+	
+	//Eigenschaften
+	
+	private String kontoNr; // Initialisierung
+	private double kontoStand = 0;
+	
+	public Fondskonto (double startWert){
+		this.kontoStand = startWert;
+=======
 
 
 	private String fondsKonto; 
@@ -6,13 +16,20 @@ public class Fondskonto {
 
 	public Fondskonto(double startWert) {
 		this.fondsKontoStand = startWert;
+>>>>>>> branch 'Prototyp' of https://github.com/znacke/Trading-Robot-Project
 	}
+<<<<<<< HEAD
+	
+	public void abheben (double summe) {
+	kontoStand = kontoStand - summe;
+=======
 	/**
 	 * Diese Methode sorgt dafür, dass der Kaufbetrag vom Fonskontostand abgezogen wird
 	 */
 
 	public void abheben(double summe) {
 		fondsKontoStand = fondsKontoStand - summe;
+>>>>>>> branch 'Prototyp' of https://github.com/znacke/Trading-Robot-Project
 	}
 
 	/**
@@ -20,9 +37,15 @@ public class Fondskonto {
 	 */
 	public void einzahlen(double summe) {
 		double realerBetrag = summe - (summe * 0.0025);
+<<<<<<< HEAD
+		System.out.println("Die Gebühr beträgt: " + summe*0.0025 + " Franken");
+		kontoStand = kontoStand + realerBetrag;
+		
+=======
 		System.out.println("Die Gebühr beträgt: " + summe * 0.0025 + " Franken");
 		fondsKontoStand = fondsKontoStand + realerBetrag;
 
+>>>>>>> branch 'Prototyp' of https://github.com/znacke/Trading-Robot-Project
 	}
 
 	/**
@@ -37,19 +60,19 @@ public class Fondskonto {
 	}
 
 	public String getFondsKonto() {
-		return fondsKonto;
+		return kontoNr;
 	}
 
 	public void setFondsKonto(String fondsKonto) {
-		this.fondsKonto = fondsKonto;
+		this.kontoNr = fondsKonto;
 	}
 
 	public double getFondsKontoStand() {
-		return fondsKontoStand;
+		return kontoStand;
 	}
 
 	public void setFondsKontoStand(double fondsKontoStand) {
-		this.fondsKontoStand = fondsKontoStand;
+		this.kontoStand = fondsKontoStand;
 	}
 
 	public Fondskonto() {
