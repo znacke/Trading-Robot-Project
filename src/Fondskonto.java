@@ -1,27 +1,42 @@
 public class Fondskonto {
-	
-	//Eigenschaften
-	
-	private String fondsKonto; // Initialisierung
+
+	// Eigenschaften
+
+	private String fondsKonto; //Initialisierung
 	private double fondsKontoStand = 0;
-	
-	public Fondskonto (double startWert){
+
+	public Fondskonto(double startWert) {
 		this.fondsKontoStand = startWert;
 	}
-	
-	public void abheben (double summe) {
-	fondsKontoStand = fondsKontoStand - summe;
+	/**
+	 * Diese Methode sorgt dafür, dass der Kaufbetrag vom Fonskontostand abgezogen wird
+	 */
+
+	public void abheben(double summe) {
+		fondsKontoStand = fondsKontoStand - summe;
 	}
-	
-	public void einzahlen (double summe) {
+
+	/**
+	 * Diese Methode sorgt dafür, dass der Verkaufsbetrag aufs Fonskontostand abzüglich Gebühren überwiesen wird
+	 */
+	public void einzahlen(double summe) {
 		double realerBetrag = summe - (summe * 0.0025);
-		System.out.println("Die Gebühr beträgt: " + summe*0.0025 + " Franken");
+		System.out.println("Die Gebühr beträgt: " + summe * 0.0025 + " Franken");
 		fondsKontoStand = fondsKontoStand + realerBetrag;
-		
+
 	}
-	
-	//Konstruktor
-	
+
+	/**
+	 * Diese Methode prüft, ob der Kaufbetrag den Fondskontostand übersteigt
+	 */
+	public boolean checkAmmount(double summe) {
+		if (fondsKontoStand < summe) {
+			return false;
+
+		} else
+			return true;
+	}
+
 	public String getFondsKonto() {
 		return fondsKonto;
 	}
@@ -39,16 +54,13 @@ public class Fondskonto {
 	}
 
 	public Fondskonto() {
-		
+
 	}
-	
+
 	public Fondskonto(String fondsKonto, double fondsKontoStand) {
-		
+
 	}
-	
-	//Methoden
-	
-		
-		
-		
+
+	// Methoden
+
 }
