@@ -60,6 +60,8 @@ public class Mitarbeiter {
 
 	public static void auflösenFondsKonto() {
 
+		
+		
 	}
 
 	public static void erhebenGebuehren() {
