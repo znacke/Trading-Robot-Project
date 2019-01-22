@@ -5,6 +5,12 @@ import java.util.Properties;
 
 public class ArchivesUnusedKunde {
 
+	/*
+	 * Author: Michael 
+	 * Alternative klasse zum kundenanlegen
+	 * Im Moment wird diese Klasse nicht eingesetzt
+	 */
+	
 /*	public static void main(String[] args) throws FileNotFoundException, IOException {
 
 		if (args.length < 8)

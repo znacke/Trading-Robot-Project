@@ -10,7 +10,13 @@ import javax.swing.JTextField;
 
 public class ExeptionKunde {
 
-//Klasse - Optionen JOptionsPane zum püfen der Bonität und Einlage des Kunden
+	/*
+	 * Author: Michael 
+	 * Klasse - Optionen JOptionsPane zum püfen der Bonität und
+	 * Einlage des Kunden. Beide Optionen sollen true ausgeben und eine Einlage des
+	 * Kunden angeben.
+	 */
+
 	public static void main(String[] args) {
 		Object[] options1 = { "True", "False" };
 		Object[] options2 = { "Ok" };

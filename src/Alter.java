@@ -2,8 +2,11 @@ import java.time.LocalDate;
 import java.time.Period;
 
 public class Alter {
-
-//klasse zum pruefen des alters des kunden
+	/*
+	 * Author: Michael 
+	 * Klasse zum pruefen des alters des kunden Alterscheck des
+	 * Kunden: Kunde => 18 Jahre. Alter wird auf Tag genau gerechnet.
+	 */
 	int jahr;
 	int monat;
 	int tag;
