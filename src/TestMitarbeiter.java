@@ -22,25 +22,25 @@ public class TestMitarbeiter {
 			
 
 			try {
-				FileOutputStream f = new FileOutputStream(new File("myObjects.txt"));
-				ObjectOutputStream o = new ObjectOutputStream(f);
+				FileOutputStream fout = new FileOutputStream(new File("Kunde001.txt"));
+				ObjectOutputStream oout = new ObjectOutputStream(fout);
 
 				// Write objects to file
-				o.writeObject(kunde1);
+				oout.writeObject(kunde1);
 
-				o.close();
-				f.close();
+				oout.close();
+				fout.close();
 
-				FileInputStream fi = new FileInputStream(new File("myObjects.txt"));
-				ObjectInputStream oi = new ObjectInputStream(fi);
+				FileInputStream fin = new FileInputStream(new File("Kunde001.txt"));
+				ObjectInputStream oin = new ObjectInputStream(fin);
 
 				// Read objects
-				Kunde pr1 = (Kunde) oi.readObject();
+				Kunde pr1 = (Kunde) oin.readObject();
 
 				System.out.println("this is the output" +pr1.toString());
 
-				oi.close();
-				fi.close();
+				oin.close();
+				fin.close();
 
 			} catch (FileNotFoundException e) {
 				System.out.println("File not found");
@@ -48,7 +48,6 @@ public class TestMitarbeiter {
 				e.printStackTrace();
 				System.out.println("Error initializing stream");
 			} catch (ClassNotFoundException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 
