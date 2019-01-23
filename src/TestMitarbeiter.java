@@ -7,6 +7,12 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
 public class TestMitarbeiter {
+	
+	/*
+	 * Author: Michael 
+	 * Alterscheck des Kunden: Kunde => 18 Jahre. Alter wird auf Tag
+	 * genau gerechnet. Klasse wird zum test verwendet
+	 */
 
 	public static void main(String[] args) {
 
@@ -20,12 +26,12 @@ public class TestMitarbeiter {
 			Fondskonto fkonto1 = michael.erstelleFondsKonto("1234-5678", 234000.55);
 			kunde1.setFondskonto(fkonto1);
 			
-
+// Erstellen eines Kunden.txt
 			try {
 				FileOutputStream fout = new FileOutputStream(new File("Kunde001.txt"));
 				ObjectOutputStream oout = new ObjectOutputStream(fout);
 
-				// Write objects to file
+// Write objects to file
 				oout.writeObject(kunde1);
 
 				oout.close();
@@ -34,7 +40,7 @@ public class TestMitarbeiter {
 				FileInputStream fin = new FileInputStream(new File("Kunde001.txt"));
 				ObjectInputStream oin = new ObjectInputStream(fin);
 
-				// Read objects
+// Read objects
 				Kunde pr1 = (Kunde) oin.readObject();
 
 				System.out.println("this is the output" +pr1.toString());
