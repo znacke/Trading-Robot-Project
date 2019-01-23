@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class KundeAnlegen
+public class ZZZARchivedUnusedKundeAnlegen
 
 /* Klasse wird im moment nicht gebruacht
 	{

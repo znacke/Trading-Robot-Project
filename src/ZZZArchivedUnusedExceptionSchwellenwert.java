@@ -1,5 +1,5 @@
 
-public class ExceptionSchwellenwert {
+public class ZZZArchivedUnusedExceptionSchwellenwert {
 	
 	public static void main(String[]Args) {
 		

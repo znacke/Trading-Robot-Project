@@ -3,7 +3,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
-public class ArchivesUnusedKunde { 
+public class ZZZArchivedUnusedKunde { 
 
 	/*
 	 * Author: Michael 
