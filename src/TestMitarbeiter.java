@@ -18,8 +18,10 @@ public class TestMitarbeiter {
 
 			Mitarbeiter michael = new Mitarbeiter();
 			Kunde kunde1 = michael.erstelleKunde("Bojan", "Eric", "Musterstrasse", 123, "abc-123", "bojan.eric@gmx.ch", "0765858585", true, false);
+			System.out.println("Kunde ohne Konto: " + kunde1.toString());
 			Fondskonto fkonto1 = michael.erstelleFondsKonto("1234-5678", 234000.55);
 			kunde1.setFondskonto(fkonto1);
+			System.out.println("Kunde mit Konto:  " + kunde1.toString());
 			
 			// Erstellen eines Kunden.txt
 			try {

@@ -20,6 +20,7 @@ public class Voraussetzungen {
 	public static String s;
 	public static boolean result;
 
+	
 	public static double getKontoStand() {
 		return kontoStand;
 	}

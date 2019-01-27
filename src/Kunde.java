@@ -44,7 +44,7 @@ public class Kunde implements Serializable {
 //write stream to TestMitarbeiter
 	public String toString() {
 		return "Vorname: " + vorname + "Nachname: "+ nachname + "Strasse: " + strasse + "Hausnummer: " + hausnummer +"Privatkonto Nummer: " + privatKontoNr 
-				+ "E-Mail: " + email + "Telefon: " + telefon + "FondsKontostand: " + fondskonto.getFondsKontoStand();
+				+ "E-Mail: " + email + "Telefon: " + telefon + (fondskonto != null ? "FondsKontostand: " + fondskonto.getFondsKontoStand() : "");
 	}
 
 	public Fondskonto getFondskonto() {

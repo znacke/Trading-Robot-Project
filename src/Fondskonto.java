@@ -3,7 +3,7 @@ import java.io.Serializable;
 public class Fondskonto implements Serializable{
 
 	private String kontoNr; 
-	private double kontoStand = 0;
+	private double kontoStand;
 	private double openingDate;
 	
 	
@@ -62,6 +62,7 @@ public class Fondskonto implements Serializable{
 
 	}
 
+	//to do: constructor
 	public Fondskonto(String fondsKonto, double fondsKontoStand) {
 
 	}

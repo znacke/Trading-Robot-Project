@@ -35,6 +35,10 @@ public class Mitarbeiter implements Serializable {
 		System.out.println("-----");
 		System.out.println("");
 		System.out.println("Kunde ist 18 Jahre alt: " + alter.checkAge18());
+		
+		
+// -> need to check this ------------------------------------------------
+		
 		System.out.println("Bonität des Kunden: " + Voraussetzungen.result);
 		System.out.println(
 				"Der Kunde hat eine Einlage von mindestens 200'000.- CHF getroffen: " + Voraussetzungen.getKontoStand());
