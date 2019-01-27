@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.Locale;
@@ -8,7 +9,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-public class ExeptionKunde {
+public class Voraussetzungen {
 
 	/*
 	 * Author: Michael Klasse - Optionen JOptionsPane zum püfen der Bonität und
@@ -23,9 +24,9 @@ public class ExeptionKunde {
 		return kontoStand;
 	}
 
-	public static double kontoStand = 123;
+	public static double kontoStand = 0;
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ClassNotFoundException, IOException {
 		Object[] options1 = { "True", "False" };
 		Object[] options2 = { "Ok" };
 
@@ -67,8 +68,11 @@ public class ExeptionKunde {
 			kontoStand = Double.parseDouble(s);
 
 //check if Konoteinzahlung = oder > also 200'000
-			if (kontoStand >= 200) {
+			if (kontoStand >= 200000) {
 				System.out.println("Auf dem Kundenkonto ist: " + kontoStand + " CHF");
+				Kunde pr1 = Kundenverwaltung.laden();
+				pr1.getFondskonto().setFondsKontoStand(kontoStand);
+				Kundenverwaltung.speichern(pr1);
 			}
 // if false = error message			
 			else {

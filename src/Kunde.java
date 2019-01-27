@@ -1,10 +1,14 @@
 import java.io.Serializable;
-import java.time.LocalDate;
 
 public class Kunde implements Serializable {
 
 	// Eigenschaften
 
+	/**
+	 * 
+	 */
+	
+	private static final long serialVersionUID = 770022127918022885L;
 	private String vorname;
 	private String nachname;
 	private String strasse;

@@ -1,10 +1,5 @@
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
 
 public class TestMitarbeiter {
 	
@@ -26,28 +21,21 @@ public class TestMitarbeiter {
 			Fondskonto fkonto1 = michael.erstelleFondsKonto("1234-5678", 234000.55);
 			kunde1.setFondskonto(fkonto1);
 			
-// Erstellen eines Kunden.txt
+			// Erstellen eines Kunden.txt
 			try {
-				FileOutputStream fout = new FileOutputStream(new File("Kunde001.txt"));
-				ObjectOutputStream oout = new ObjectOutputStream(fout);
+				String kundenStringGeschrieben = kunde1.toString();
+				
+				// Write objects to file
+				Kundenverwaltung.speichern(kunde1);
 
-// Write objects to file
-				oout.writeObject(kunde1);
-
-				oout.close();
-				fout.close();
-
-				FileInputStream fin = new FileInputStream(new File("Kunde001.txt"));
-				ObjectInputStream oin = new ObjectInputStream(fin);
-
-// Read objects
-				Kunde pr1 = (Kunde) oin.readObject();
-
-				System.out.println("this is the output" +pr1.toString());
-
-				oin.close();
-				fin.close();
-
+				// Read objects
+				Kunde pr1 = Kundenverwaltung.laden();
+				if(kundenStringGeschrieben.equals(pr1.toString()))
+					System.out.println("Kunde korrekt geschrieben");
+				else {
+					System.err.println("Erwartete Kunde geschrieben: " + kundenStringGeschrieben);
+					System.err.println("Erhalten Kunde gelesen:      " + pr1.toString());
+				}
 			} catch (FileNotFoundException e) {
 				System.out.println("File not found");
 			} catch (IOException e) {

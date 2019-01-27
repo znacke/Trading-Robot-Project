@@ -1,9 +1,11 @@
+import java.io.IOException;
 
 public class TestRobot {
 	
-public static void main(String[] args) {
+public static void main(String[] args) throws ClassNotFoundException, IOException {
 	
-	Fondskonto f = new Fondskonto (200000);
+	Kunde pr1 = Kundenverwaltung.laden();
+	Fondskonto f = pr1.getFondskonto();
 	Robot r = new Robot (f);
 	Aktie a = new Aktie ();
 	a.setWert(300);

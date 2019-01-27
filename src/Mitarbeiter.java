@@ -2,6 +2,11 @@ import java.io.Serializable;
 
 public class Mitarbeiter implements Serializable {
 	
+	/**
+	 * 
+	 */
+	
+	private static final long serialVersionUID = -8829044902292400725L;
 	private Kunde kunde;
 	
 	public Mitarbeiter() {
@@ -30,9 +35,9 @@ public class Mitarbeiter implements Serializable {
 		System.out.println("-----");
 		System.out.println("");
 		System.out.println("Kunde ist 18 Jahre alt: " + alter.checkAge18());
-		System.out.println("Bonität des Kunden: " + ExeptionKunde.result);
+		System.out.println("Bonität des Kunden: " + Voraussetzungen.result);
 		System.out.println(
-				"Der Kunde hat eine Einlage von mindestens 200'000.- CHF getroffen: " + ExeptionKunde.getKontoStand());
+				"Der Kunde hat eine Einlage von mindestens 200'000.- CHF getroffen: " + Voraussetzungen.getKontoStand());
 		System.out.println("");
 		System.out.println("-----");
 		System.out.println("");

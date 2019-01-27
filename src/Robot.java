@@ -1,7 +1,5 @@
 import java.util.ArrayList;
 
-import com.sun.xml.internal.ws.api.pipe.ThrowableContainerPropertySet;
-
 public class Robot {
 
 	Fondskonto fondskonto;
