@@ -4,6 +4,10 @@ import java.math.BigDecimal;
 import yahoofinance.Stock;
 import yahoofinance.YahooFinance;
 
+/*
+ * Author: Bojan
+ * Klasse YahooFinanceAPI, zeigt alle Daten der bestehenden SMI Aktien
+ */
 public class YahooFinanceAPI {
 
 	public static void main(String[] args) throws IOException {
