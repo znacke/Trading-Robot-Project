@@ -46,5 +46,11 @@ public class Aktie {
 	public void setVolumen(int volumen) {
 		this.volumen = volumen;
 	}
+	
+	HttpResponse<JsonNode> response = Unirest.post(API_URL)
+			.header("X-RapidAPI-Key", API_KEY)
+			.queryString("parameter", "value")
+			.field("parameter", "value")
+			.asJson();
 
 }
