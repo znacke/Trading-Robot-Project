@@ -26,6 +26,7 @@ public class Voraussetzungen {
 	}
 
 	public static double kontoStand = 0;
+	public static String fondsKonto;
 
 	public static void main(String[] args) throws ClassNotFoundException, IOException {
 		Object[] options1 = { "True", "False" };

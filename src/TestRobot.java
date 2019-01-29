@@ -1,5 +1,9 @@
 import java.io.IOException;
 
+/**
+ * Author: Adrian
+ * Dient zum Testen des Robots
+ */
 public class TestRobot {
 	
 public static void main(String[] args) throws ClassNotFoundException, IOException {
