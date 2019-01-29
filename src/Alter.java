@@ -10,7 +10,7 @@ public class Alter {
 	int jahr;
 	int monat;
 	int tag;
-	LocalDate geburtsdatum;
+	static LocalDate geburtsdatum;
 
 	public static LocalDate getLocalDate() {
 		return LocalDate.now();
