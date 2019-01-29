@@ -13,7 +13,7 @@ public class Mitarbeiter implements Serializable {
 	}
 
 	public Kunde erstelleKunde(String vorname, String nachname, String strasse, int hausnummer, String privatKontoNr,
-			String email, String telefon, boolean bonitaet) {
+			String email, String telefon) {
 		Kunde k = new Kunde("Hans", "Muster", "Musterstrasse", 1, "123-456", "muster@muster.ch", "781234567", true,
 				true);
 		Alter alter = new Alter(1992, 12, 28);
@@ -30,7 +30,7 @@ public class Mitarbeiter implements Serializable {
 		System.out.println("Bank Kontonummer: " + privatKontoNr);
 		System.out.println("Email Adresse: " + email);
 		System.out.println("Telefonnummer: " + telefon);
-		System.out.println("Bonität erfüllt? " + bonitaet);
+		System.out.println("Bonität erfüllt? " + Voraussetzungen.result);
 		System.out.println("Einlage erfüllt? " + Voraussetzungen.kontoStand);
 		System.out.println("-----");
 		System.out.println("");

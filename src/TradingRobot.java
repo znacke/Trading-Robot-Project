@@ -1,1 +1,1 @@
-public class TradingRobot
+public class TradingRobot;
