@@ -9,7 +9,7 @@ public class TestMitarbeiter {
 	 * genau gerechnet. Klasse wird zum test verwendet
 	 */
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ClassNotFoundException, IOException {
 
 //			Kunde peter = new Kunde("Peter", "Muster", "Lorenweg", 27, "123-456", "peter.muster@hotmail.com",
 //					"078 704 51 89", true, true, 20);
@@ -19,7 +19,9 @@ public class TestMitarbeiter {
 			Mitarbeiter michael = new Mitarbeiter();
 			Kunde kunde1 = michael.erstelleKunde("Bojan", "Eric", "Musterstrasse", 123, "abc-123", "bojan.eric@gmx.ch", "0765858585", true, false);
 			System.out.println("Kunde ohne Konto: " + kunde1.toString());
-			Fondskonto fkonto1 = michael.erstelleFondsKonto("1234-5678", 234000.55);
+			Kunde pr1 = Kundenverwaltung.laden();
+			pr1.getFondskonto().setFondsKontoStand(Voraussetzungen.kontoStand);
+			Fondskonto fkonto1 = michael.erstelleFondsKonto("1234-5678 ", Voraussetzungen.getKontoStand());
 			kunde1.setFondskonto(fkonto1);
 			System.out.println("Kunde mit Konto:  " + kunde1.toString());
 			
@@ -31,7 +33,6 @@ public class TestMitarbeiter {
 				Kundenverwaltung.speichern(kunde1);
 
 				// Read objects
-				Kunde pr1 = Kundenverwaltung.laden();
 				if(kundenStringGeschrieben.equals(pr1.toString()))
 					System.out.println("Kunde korrekt geschrieben");
 				else {
@@ -43,8 +44,6 @@ public class TestMitarbeiter {
 			} catch (IOException e) {
 				e.printStackTrace();
 				System.out.println("Error initializing stream");
-			} catch (ClassNotFoundException e) {
-				e.printStackTrace();
 			}
 
 		}

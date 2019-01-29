@@ -59,12 +59,13 @@ public class Mitarbeiter implements Serializable {
 
 	public Fondskonto erstelleFondsKonto(String fondsKonto, double fondsKontoStand) {
 		Fondskonto f = new Fondskonto(fondsKonto, fondsKontoStand);
-		System.out.println("FONDSKONTO WURDE ERSTELLT");
-		System.out.println("Fonds-Konto: " + fondsKonto);
+		System.out.println("FONDSKONTO WURDE ERSTELLT");				
+		System.out.println("Fonds-Konto: " + Voraussetzungen.fondsKonto);
 		System.out.println("Fonds-Kontostand beträgt aktuell: " + fondsKontoStand);
 		return f;
 
 	}
+	
 
 	public static void auflösenFondsKonto() {
 
@@ -72,9 +73,6 @@ public class Mitarbeiter implements Serializable {
 		
 	}
 
-	public static void erhebenGebuehren() {
-
-	}
 
 	}
 
