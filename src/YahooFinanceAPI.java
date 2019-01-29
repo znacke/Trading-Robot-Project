@@ -6,7 +6,7 @@ import java.math.BigDecimal;
 import yahoofinance.Stock;
 import yahoofinance.YahooFinance;
 
-	public class HelloYahoo {
+	public class YahooFinanceAPI {
 		public static void main(String[] args) throws IOException {
 			Stock stock = YahooFinance.get("IBM");
 
@@ -20,4 +20,4 @@ import yahoofinance.YahooFinance;
 
 	}
 
-}
+
