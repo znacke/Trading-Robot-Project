@@ -11,6 +11,7 @@ public class Robot {
 	}
 
 	/**
+	 * Author: Adrian
 	 * Diese Methode vergleicht den Schwellenwert mit dem Aktienkurs
 	 */
 			
@@ -18,6 +19,7 @@ public class Robot {
 		
 		if (a.getMinSchwellenwert() > a.getWert()) {
 			/**
+			 * Author: Adrian
 			 * Diese Methode prüft ob genügen Geld auf dem Fondskonto ist
 			 */
 			boolean summeOk = fondskonto.checkAmmount(a.getWert() * a.getVolumen());
@@ -32,6 +34,7 @@ public class Robot {
 		}
 	}
 	/**
+	 * Author: Adrian
 	 * Diese Methode führt den Kauf aus
 	 */
 	private void kaufen(Aktie a) {
@@ -43,6 +46,7 @@ public class Robot {
 
 	}
 	/**
+	 * Author: Adrian
 	 * Diese Methode führt den Verkauf aus 
 	 */
 	private void verkaufen(Aktie a) {

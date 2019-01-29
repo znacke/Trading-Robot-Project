@@ -6,11 +6,15 @@ public class Fondskonto implements Serializable{
 	private double kontoStand;
 	private double openingDate;
 	
-	
+	/*
+	 * Author: Adrian
+	 * Konstruktor Fondskonto
+	 */
 	public Fondskonto (double startWert){
 		this.kontoStand = startWert;
 	}
 	/**
+	 * Author: Adrian
 	 * Diese Methode sorgt dafür, dass der Kaufbetrag vom Fonskontostand abgezogen wird
 	 */
 
@@ -19,6 +23,7 @@ public class Fondskonto implements Serializable{
 	}
 
 	/**
+	 * Author: Adrian
 	 * Diese Methode sorgt dafür, dass der Verkaufsbetrag aufs Fonskontostand abzüglich Gebühren überwiesen wird
 	 */
 	public void einzahlen(double summe) {
@@ -32,6 +37,7 @@ public class Fondskonto implements Serializable{
 	}
 
 	/**
+	 * Author: Adrian
 	 * Diese Methode prüft, ob der Kaufbetrag den Fondskontostand übersteigt
 	 */
 	public boolean checkAmmount(double summe) {

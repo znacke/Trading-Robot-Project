@@ -1,5 +1,9 @@
 public class Aktie {
-
+	
+	/**
+	 * Author: Adrian
+	 * Klasse Aktie
+	 */
 
 	private String name = "name";
 	private double wert = 100.58;
