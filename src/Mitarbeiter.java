@@ -18,7 +18,7 @@ public class Mitarbeiter implements Serializable {
 				true);
 		Alter alter = new Alter(1992, 12, 28);
 
-		if (bonitaet == false || einlage == false) {
+		if (Voraussetzungen.kontoStand >= 200000 ) {
 
 			System.out.println("DER KUNDE KONNTE NICHT ERSTELLT WERDEN!");
 		} else
