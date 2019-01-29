@@ -32,8 +32,6 @@ public class Fondskonto implements Serializable{
 		System.out.println("Die Gebühr beträgt: " + summe*0.0025 + " Franken");
 		kontoStand = kontoStand + realerBetrag;
 
-		System.out.println("Die Gebühr beträgt: " + summe * 0.0025 + " Franken");
-		kontoStand = kontoStand + realerBetrag;
 	}
 
 	/**
