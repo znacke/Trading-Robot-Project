@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class Robot {
@@ -18,16 +19,21 @@ public class Robot {
 	/**
 	 * Author: Adrian
 	 * Diese Methode vergleicht den Schwellenwert mit dem Aktienkurs
+	 * @throws IOException 
+	 * @throws ClassNotFoundException 
 	 */
 			
-	public void checkSchwellenwert(Aktie a) {
+	public void checkSchwellenwert(Aktie a) throws ClassNotFoundException, IOException {
 		
 		if (a.getMinSchwellenwert() > a.getWert()) {
+			
 			/**
 			 * Author: Adrian
 			 * Diese Methode prüft ob genügen Geld auf dem Fondskonto ist
 			 */
-			boolean summeOk = fondskonto.checkAmmount(a.getWert() * a.getVolumen());
+			
+			Kunde pr1 = Kundenverwaltung.laden();
+			boolean summeOk = pr1.getFondskonto().checkAmmount(a.getWert() * a.getVolumen());
 			if (summeOk) {
 				kaufen(a);
 			} else {
@@ -41,24 +47,29 @@ public class Robot {
 	/**
 	 * Author: Adrian
 	 * Diese Methode führt den Kauf aus
+	 * @throws IOException 
+	 * @throws ClassNotFoundException 
 	 */
-	private void kaufen(Aktie a) {
-
+	private void kaufen(Aktie a) throws ClassNotFoundException, IOException {
+		Kunde pr1 = Kundenverwaltung.laden();
 		System.out.println("Es werden " + a.getVolumen() + " Aktien zum Wert von " + a.getWert() + " Franken gekauft"
 				+ " was einem Total von " + a.getWert() * a.getVolumen() + " Franken entspricht");
 		fondskonto.abheben(a.getWert() * a.getVolumen());
-		System.out.println("Der Fondskontostand beträngt nun: " + fondskonto.getFondsKontoStand() + " Franken");
+		System.out.println("Der Fondskontostand beträngt nun: " + pr1.getFondskonto().getFondsKontoStand() + " Franken");
 
 	}
 	/**
 	 * Author: Adrian
 	 * Diese Methode führt den Verkauf aus 
+	 * @throws IOException 
+	 * @throws ClassNotFoundException 
 	 */
-	private void verkaufen(Aktie a) {
+	private void verkaufen(Aktie a) throws ClassNotFoundException, IOException {
+		Kunde pr1 = Kundenverwaltung.laden();
 		System.out.println("Es werden " + a.getVolumen() + " Aktien zum Wert von " + a.getWert() + " Franken verkauft"
 				+ " was einem Total von " + a.getWert() * a.getVolumen() + " Franken entspricht");
 		fondskonto.einzahlen(a.getWert() * a.getVolumen());
-		System.out.println("Der Fondskontostand beträngt nun: " + fondskonto.getFondsKontoStand() + " Franken");
+		System.out.println("Der Fondskontostand beträngt nun: " + pr1.getFondskonto().getFondsKontoStand() + " Franken");
 
 	}
 }
