@@ -4,7 +4,8 @@ import java.util.ArrayList;
 public class Robot {
 
 	/*
-	 * @Author: Zweck der Klasse:
+	 * @Author: Adrian, Michael
+	 * Zweck der Klasse:
 	 */
 
 	Fondskonto fondskonto;
