@@ -27,6 +27,10 @@ public class StockArrayList {
 			namensListe.get(i);
 			System.out.println("Name: " + namensListe.get(i));
 		}
+		
+		for(String string : namensListe) {
+			System.out.println("Die Länge des Namens ist: " + string.length() );
+		}
 			
 
 	}
