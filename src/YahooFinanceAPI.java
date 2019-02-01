@@ -5,8 +5,8 @@ import yahoofinance.Stock;
 import yahoofinance.YahooFinance;
 
 /*
- * Author: Bojan
- * Klasse YahooFinanceAPI, zeigt alle Daten der bestehenden SMI Aktien
+ * @Author: Bojan
+ * Zweck der Klasse: YahooFinanceAPI, zeigt alle Daten der bestehenden SMI Aktien
  */
 public class YahooFinanceAPI {
 

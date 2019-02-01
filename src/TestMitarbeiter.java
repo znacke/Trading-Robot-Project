@@ -20,8 +20,8 @@ public class TestMitarbeiter {
 			Kunde kunde1 = michael.erstelleKunde("Bojan", "Eric", "Musterstrasse ", 123, "abc-123", "bojan.eric@gmx.ch", null);
 			System.out.println("Kunde ohne Konto: " + kunde1.toString());
 			Kunde pr1 = Kundenverwaltung.laden();
-			pr1.getFondskonto().setFondsKontoStand(Voraussetzungen.kontoStand);
-			Fondskonto fkonto1 = michael.erstelleFondsKonto("1234-5678 ", Voraussetzungen.getKontoStand());
+//			pr1.getFondskonto().getFondsKontoStand();
+			Fondskonto fkonto1 = michael.erstelleFondsKonto("1234-5678 ", pr1.getFondskonto().getFondsKontoStand());
 			kunde1.setFondskonto(fkonto1);
 			System.out.println("Kunde mit Konto:  " + kunde1.toString());
 			

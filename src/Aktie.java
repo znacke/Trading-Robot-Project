@@ -1,8 +1,8 @@
 public class Aktie {
 	
 	/**
-	 * Author: Adrian
-	 * Klasse Aktie
+	 * @Author: Adrian
+	 * Zweck der Klasse: 
 	 */
 
 	private String name = "name";

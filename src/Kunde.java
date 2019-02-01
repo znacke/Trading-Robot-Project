@@ -2,11 +2,10 @@ import java.io.Serializable;
 
 public class Kunde implements Serializable {
 
-	// Eigenschaften
-
-	/**
-	 * 
-	 */
+	/*
+	*@Author: 
+	* Zweck der Klasse:
+	*/
 	
 	private static final long serialVersionUID = 770022127918022885L;
 	private String vorname;
@@ -42,12 +41,12 @@ public class Kunde implements Serializable {
 	}
 
 //write stream to TestMitarbeiter
-	public String toString() {
+/*	public String toString() {
 		System.out.println("Kunde geschrieben: ");
 		return "Vorname: " + vorname + ", Nachname: "+ nachname + ", Strasse: " + strasse + ", Hausnummer: " + hausnummer +", Privatkonto Nummer: " + privatKontoNr 
-				+ ", E-Mail: " + email + ", Telefon: " + telefon;
+				+ ", E-Mail: " + email + ", Telefon: " + telefon; 
 	
-	} 
+	} */ 
 
 	public Fondskonto getFondskonto() {
 		return fondskonto;

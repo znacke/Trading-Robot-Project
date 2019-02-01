@@ -4,9 +4,9 @@ import javax.swing.JTextField;
 
 public class AgeCalculator {
 	/*
-	 * Author: Michael 
-	 * Alterscheck des Kunden: Kunde => 18 Jahre. Alter wird auf Tag
-	 * genau gerechnet. Klasse wird zum test verwendet
+	 * @Author: Adrian
+	 * Zweck der Klasse:Alterscheck des Kunden: Kunde => 18 Jahre. Alter wird auf Tag
+	 * 					genau gerechnet. Klasse wird zum test verwendet
 	 */
 	public static void main(String[] args) {
 

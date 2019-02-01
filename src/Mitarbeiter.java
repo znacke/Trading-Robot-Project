@@ -1,10 +1,11 @@
+import java.io.IOException;
 import java.io.Serializable;
 import java.time.Period;
 
 public class Mitarbeiter implements Serializable {
 
-	/**
-	 * 
+	/** @author 
+	 * Klasse dient als Kontrolle 
 	 */
 
 	private static final long serialVersionUID = -8829044902292400725L;
@@ -14,7 +15,7 @@ public class Mitarbeiter implements Serializable {
 	}
 
 	public Kunde erstelleKunde(String vorname, String nachname, String strasse, int hausnummer, String privatKontoNr,
-			String email, String telefon) {
+			String email, String telefon) throws ClassNotFoundException, IOException {
 		Kunde k = new Kunde("Hans", "Muster", "Musterstrasse", 1, "123-456", "muster@muster.ch", "781234567", true,
 				true);
 		Alter alter = new Alter(1992, 12, 28);
@@ -33,7 +34,8 @@ public class Mitarbeiter implements Serializable {
 		System.out.println("Email Adresse: " + email);
 		System.out.println("Telefonnummer: " + telefon);
 		System.out.println("Bonität erfüllt? " + Voraussetzungen.result);
-		System.out.println("Einlage erfüllt? " + Voraussetzungen.kontoStand);
+		Kunde pr1 = Kundenverwaltung.laden();
+		System.out.println("Einlage erfüllt? " + pr1.getFondskonto().getFondsKontoStand());
 		System.out.println("-----");
 		System.out.println("");
 		System.out.println("Kunde ist 18 Jahre alt: " + alter.checkAge18());
@@ -58,10 +60,10 @@ public class Mitarbeiter implements Serializable {
 		return fondskonto.getFondsKontoStand();
 	}
 
-	public Fondskonto erstelleFondsKonto(String fondsKonto, double fondsKontoStand) {
+	public Fondskonto erstelleFondsKonto(String fondsKonto, double fondsKontoStand) throws ClassNotFoundException, IOException {
 		Fondskonto f = new Fondskonto(fondsKonto, fondsKontoStand);
 		System.out.println("FONDSKONTO WURDE ERSTELLT");
-		System.out.println("Fonds-Konto: " + Voraussetzungen.fondsKonto);
+		Kunde pr1 = Kundenverwaltung.laden();
 		System.out.println("Fonds-Kontostand beträgt aktuell: " + fondsKontoStand);
 		return f;
 

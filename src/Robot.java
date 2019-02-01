@@ -1,6 +1,11 @@
 import java.util.ArrayList;
 
 public class Robot {
+	
+	/*
+	*@Author: 
+	* Zweck der Klasse:
+	*/
 
 	Fondskonto fondskonto;
 	ArrayList<Aktie> aktienListe;
