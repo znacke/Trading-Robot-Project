@@ -44,7 +44,7 @@ public class Mitarbeiter implements Serializable {
 
 		System.out.println("Bonität des Kunden: " + Voraussetzungen.result);
 		System.out.println("Der Kunde hat eine Einlage von mindestens 200'000.- CHF getroffen: "
-				+ Voraussetzungen.getKontoStand());
+				+ pr1.getFondskonto().getFondsKontoStand());
 		System.out.println("");
 		System.out.println("-----");
 		System.out.println("");
