@@ -1,5 +1,6 @@
 import java.io.IOException;
 import java.math.BigDecimal;
+import java.util.ArrayList;
 
 import yahoofinance.Stock;
 import yahoofinance.YahooFinance;
@@ -9,6 +10,14 @@ import yahoofinance.YahooFinance;
  * Klasse YahooFinanceAPI, zeigt alle Daten der bestehenden SMI Aktien
  */
 public class YahooFinanceAPI {
+
+	public YahooFinanceAPI(ArrayList<String> searchList) {
+		for (String stockName : searchList) {
+			
+			
+		}
+		// TODO Auto-generated constructor stub
+	}
 
 	public static void main(String[] args) throws IOException {
 		Stock stock = YahooFinance.get("INTC");
@@ -34,6 +43,7 @@ public class YahooFinanceAPI {
 		novartis.print();
 		Stock zurichInsurance = stocks.get("ZURN.VX");
 		zurichInsurance.print();
+		
 		Stock swissRE = stocks.get("SREN.VX");
 		swissRE.print();
 		Stock swissLife = stocks.get("SLHN.VX");
