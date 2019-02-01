@@ -12,9 +12,10 @@ import javax.swing.JTextField;
 public class Voraussetzungen {
 
 	/*
-	 * Author: Michael Klasse - Optionen JOptionsPane zum püfen der Bonität und
-	 * Einlage des Kunden. Beide Optionen sollen true ausgeben und eine Einlage des
-	 * Kunden angeben.
+	 * Author: Michael 
+	 * Zweck der Klasse: 	Optionen JOptionsPane zum püfen der Bonität und
+	 * 						Einlage des Kunden. Beide Optionen sollen true ausgeben und eine Einlage des
+	 * 						Kunden angeben.
 	 */
 
 	public static String s;
@@ -26,7 +27,7 @@ public class Voraussetzungen {
 		return kontoStand;
 	}
 
-	public static double kontoStand = 0;
+	public static double kontoStand;
 	public static double fondsKonto;
 
 	public static void main(String[] args) throws ClassNotFoundException, IOException {

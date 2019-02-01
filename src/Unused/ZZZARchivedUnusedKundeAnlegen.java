@@ -1,3 +1,4 @@
+package Unused;
 import java.util.Scanner;
 
 public class ZZZARchivedUnusedKundeAnlegen

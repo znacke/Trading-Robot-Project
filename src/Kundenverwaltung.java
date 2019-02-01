@@ -7,6 +7,12 @@ import java.io.ObjectOutputStream;
 
 public class Kundenverwaltung {
 	
+	/*
+	*@Author: Michael
+	* Zweck der Klasse: Speichern und laden funktiuon
+	* 					Kunden001.txt files erstellen zwecks spechen und weitergeben der verschiedenen Kundendaten.				
+	*/
+	
 	// Kundendatenbank mit einem Kunde
 	private static String kundenDatei = "Kunde001.txt";
 

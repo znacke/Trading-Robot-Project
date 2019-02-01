@@ -2,6 +2,11 @@ import java.io.Serializable;
 
 public class Fondskonto implements Serializable{
 
+	/*
+	*@Author: Adrian
+	* Zweck der Klasse:
+	*/
+
 	private String kontoNr; 
 	private double kontoStand;
 	private double openingDate;

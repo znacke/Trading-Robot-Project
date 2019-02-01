@@ -3,9 +3,9 @@ import java.time.Period;
 
 public class Alter {
 	/*
-	 * Author: Michael 
-	 * Klasse zum pruefen des alters des kunden Alterscheck des
-	 * Kunden: Kunde => 18 Jahre. Alter wird auf Tag genau gerechnet.
+	 * @Author: Michael
+	 * Zweck der Klasse:Klasse zum pruefen des alters des kunden Alterscheck des
+	 * 					Kunden: Kunde => 18 Jahre. Alter wird auf Tag genau gerechnet.
 	 */
 	int jahr;
 	int monat;
