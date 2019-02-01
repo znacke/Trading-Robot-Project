@@ -1,6 +1,8 @@
 import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Map;
 
 import yahoofinance.Stock;
 import yahoofinance.YahooFinance;
@@ -12,11 +14,21 @@ import yahoofinance.YahooFinance;
 public class YahooFinanceAPI {
 
 	public YahooFinanceAPI(ArrayList<String> searchList) {
-		for (String stockName : searchList) {
-			
-			
+		Map<String, Stock> stocks;
+		try {
+			stocks = YahooFinance.get(searchList.toArray(new String[searchList.size()]));
+			Iterator it = stocks.entrySet().iterator();
+			while (it.hasNext()) {
+				Map.Entry pair = (Map.Entry) it.next();
+				System.out.println(pair.getKey() + " = " + pair.getValue());
+
+			}
+
+		} catch (IOException e) {
+
+			e.printStackTrace();
 		}
-		// TODO Auto-generated constructor stub
+
 	}
 
 	public static void main(String[] args) throws IOException {
@@ -43,7 +55,7 @@ public class YahooFinanceAPI {
 		novartis.print();
 		Stock zurichInsurance = stocks.get("ZURN.VX");
 		zurichInsurance.print();
-		
+
 		Stock swissRE = stocks.get("SREN.VX");
 		swissRE.print();
 		Stock swissLife = stocks.get("SLHN.VX");
