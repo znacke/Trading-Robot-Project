@@ -3,8 +3,8 @@ import java.io.Serializable;
 public class Kunde implements Serializable {
 
 	/*
-	*@Author: 
-	* Zweck der Klasse:
+	*@Author: Bojan
+	* Zweck der Klasse: Kunde wird erstellt
 	*/
 	
 	private static final long serialVersionUID = 770022127918022885L;
