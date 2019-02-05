@@ -9,7 +9,7 @@ import yahoofinance.YahooFinance;
 
 /*
  * @Author: Bojan
- * Zweck der Klasse: YahooFinanceAPI, zeigt alle Daten der bestehenden SMI Aktien
+ * Zweck der Klasse: YahooFinanceAPI, Reader zeigt alle Daten der bestehenden SMI Aktien
  */
 public class YahooFinanceAPI {
 
@@ -32,7 +32,7 @@ public class YahooFinanceAPI {
 	}
 
 	public static void main(String[] args) throws IOException {
-		Stock stock = YahooFinance.get("INTC");
+		Stock stock = YahooFinance.get("SAP");
 
 		BigDecimal price = stock.getQuote().getPrice();
 		BigDecimal change = stock.getQuote().getChangeInPercent();
@@ -55,7 +55,6 @@ public class YahooFinanceAPI {
 		novartis.print();
 		Stock zurichInsurance = stocks.get("ZURN.VX");
 		zurichInsurance.print();
-
 		Stock swissRE = stocks.get("SREN.VX");
 		swissRE.print();
 		Stock swissLife = stocks.get("SLHN.VX");
