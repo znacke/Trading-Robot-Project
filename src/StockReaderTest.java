@@ -1,6 +1,11 @@
 import java.util.ArrayList;
 
 public class StockReaderTest {
+	
+	/* 
+	 * Author: Bojan
+	 * Zweck: Liste mit SMI Aktien wird erstellt.
+	 */
 
 	public static void main(String[] args) {
 
