@@ -30,7 +30,7 @@
   </class>  
   <class id="4" language="java" name="CustomJTable" project="Trading_Robot_Project" 
     file="/Trading_Robot_Project/src/CustomJTable.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="6" y="426"/>    
+    <position height="-1" width="-1" x="431" y="370"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -84,7 +84,7 @@
   </class>  
   <class id="10" language="java" name="Robot" project="Trading_Robot_Project" 
     file="/Trading_Robot_Project/src/Robot.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="842" y="656"/>    
+    <position height="-1" width="-1" x="794" y="640"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -93,7 +93,7 @@
   </class>  
   <class id="11" language="java" name="Stock" project="Trading_Robot_Project" 
     file="/Trading_Robot_Project/src/Stock.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="314" width="174" x="-93" y="782"/>    
+    <position height="314" width="174" x="361" y="689"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -102,7 +102,7 @@
   </class>  
   <class id="12" language="java" name="StockList" project="Trading_Robot_Project" 
     file="/Trading_Robot_Project/src/StockList.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="272" y="804"/>    
+    <position height="-1" width="-1" x="217" y="663"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -111,7 +111,7 @@
   </class>  
   <class id="13" language="java" name="StockReader" project="Trading_Robot_Project" 
     file="/Trading_Robot_Project/src/StockReader.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="331" y="601"/>    
+    <position height="-1" width="-1" x="140" y="480"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -120,7 +120,7 @@
   </class>  
   <class id="14" language="java" name="StockTableModel" project="Trading_Robot_Project" 
     file="/Trading_Robot_Project/src/StockTableModel.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="-4" y="653"/>    
+    <position height="-1" width="-1" x="448" y="565"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -129,7 +129,7 @@
   </class>  
   <class id="15" language="java" name="YahooFinanceAPI" project="Trading_Robot_Project" 
     file="/Trading_Robot_Project/src/YahooFinanceAPI.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="238" y="436"/>    
+    <position height="-1" width="-1" x="111" y="346"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -148,7 +148,7 @@
   <association id="17">    
     <end type="SOURCE" refId="12" navigable="false">      
       <attribute id="18" name="stocklist">        
-        <position height="18" width="47" x="91" y="851"/>      
+        <position height="18" width="47" x="394" y="665"/>      
       </attribute>      
       <multiplicity id="19" minimum="0" maximum="2147483647"/>    
     </end>    
@@ -158,9 +158,11 @@
   <association id="20">    
     <end type="SOURCE" refId="4" navigable="false">      
       <attribute id="21" name="myList">        
-        <position height="18" width="39" x="165" y="725"/>      
+        <position height="18" width="39" x="228" y="586"/>      
       </attribute>      
-      <multiplicity id="22" minimum="0" maximum="1"/>    
+      <multiplicity id="22" minimum="0" maximum="1">        
+        <position height="16" width="23" x="288" y="591"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="12" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
@@ -169,7 +171,7 @@
     <bendpoint x="940" y="252"/>    
     <end type="SOURCE" refId="6" navigable="false">      
       <attribute id="24" name="fondskonto">        
-        <position height="18" width="62" x="439" y="883"/>      
+        <position height="18" width="62" x="574" y="843"/>      
       </attribute>      
       <multiplicity id="25" minimum="0" maximum="1"/>    
     </end>    
@@ -187,10 +189,10 @@
   <association id="29">    
     <end type="SOURCE" refId="10" navigable="false">      
       <attribute id="30" name="fondskonto">        
-        <position height="18" width="64" x="73" y="504"/>      
+        <position height="18" width="64" x="571" y="829"/>      
       </attribute>      
       <multiplicity id="31" minimum="0" maximum="1">        
-        <position height="16" width="23" x="462" y="895"/>      
+        <position height="16" width="23" x="607" y="871"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="5" navigable="true"/>    
@@ -209,7 +211,7 @@
   <association id="35">    
     <end type="SOURCE" refId="14" navigable="false">      
       <attribute id="36" name="myList">        
-        <position height="18" width="39" x="3" y="978"/>      
+        <position height="18" width="39" x="621" y="844"/>      
       </attribute>      
       <multiplicity id="37" minimum="0" maximum="2147483647"/>    
     </end>    
@@ -219,10 +221,10 @@
   <association id="38">    
     <end type="SOURCE" refId="10" navigable="false">      
       <attribute id="39" name="aktienListe">        
-        <position height="18" width="61" x="725" y="1160"/>      
+        <position height="18" width="61" x="580" y="841"/>      
       </attribute>      
       <multiplicity id="40" minimum="0" maximum="2147483647">        
-        <position height="16" width="21" x="812" y="1192"/>      
+        <position height="16" width="21" x="613" y="857"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="3" navigable="true"/>    
